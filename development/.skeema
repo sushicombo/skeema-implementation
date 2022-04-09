@@ -1,0 +1,7 @@
+generator=skeema:1.7.1-community
+
+[production]
+flavor=mariadb:10.3
+host=localhost
+port=3306
+user=root
