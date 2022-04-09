@@ -1,0 +1,21 @@
+CREATE TABLE `coupons` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) DEFAULT NULL,
+  `quota` int(11) DEFAULT NULL,
+  `discount` int(11) DEFAULT NULL,
+  `discount_type` varchar(255) DEFAULT NULL,
+  `minimum_purchase` int(11) DEFAULT NULL,
+  `maximum_discount` int(11) DEFAULT NULL,
+  `order_start_datetime` datetime DEFAULT NULL,
+  `order_end_datetime` datetime DEFAULT NULL,
+  `use_start_datetime` datetime DEFAULT NULL,
+  `use_end_datetime` datetime DEFAULT NULL,
+  `description` text DEFAULT NULL,
+  `terms_conditions` text DEFAULT NULL,
+  `is_displayed` tinyint(1) DEFAULT NULL,
+  `image` varchar(500) DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  `maximum_usage` int(10) unsigned DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

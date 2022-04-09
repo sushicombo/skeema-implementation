@@ -1,0 +1,20 @@
+CREATE TABLE `order_package_products` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `order_package_service_id` int(10) unsigned NOT NULL,
+  `product_id` int(10) unsigned NOT NULL,
+  `product_name` varchar(255) DEFAULT NULL,
+  `product_price` decimal(15,2) DEFAULT NULL,
+  `product_special_price` decimal(15,2) DEFAULT NULL,
+  `product_description` text DEFAULT NULL,
+  `product_image` varchar(255) DEFAULT NULL,
+  `product_warranty_period` int(10) unsigned DEFAULT NULL,
+  `mechanic_commission` decimal(15,2) DEFAULT NULL,
+  `quantity` int(10) unsigned DEFAULT 1,
+  `is_price_changed` tinyint(1) DEFAULT 0,
+  `warranty_date` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `fk_order_package_products_order_package_service_id` (`order_package_service_id`),
+  KEY `fk_order_package_products_product_id` (`product_id`),
+  CONSTRAINT `fk_order_package_products_order_package_service_id` FOREIGN KEY (`order_package_service_id`) REFERENCES `order_package_services` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `fk_order_package_products_product_id` FOREIGN KEY (`product_id`) REFERENCES `products` (`id`) ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
