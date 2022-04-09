@@ -10,6 +10,5 @@ CREATE TABLE `broadcasts` (
   `status` varchar(15) NOT NULL DEFAULT 'pending',
   `created_at` datetime DEFAULT NULL,
   `updated_at` datetime DEFAULT NULL,
-  `example` varchar(10),
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
