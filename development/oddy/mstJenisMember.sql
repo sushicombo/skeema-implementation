@@ -7,4 +7,4 @@ CREATE TABLE `mstJenisMember` (
   `statusData` int(11) NOT NULL,
   `syaratMember` decimal(18,2) DEFAULT NULL,
   PRIMARY KEY (`idJenisMember`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

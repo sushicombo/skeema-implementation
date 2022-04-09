@@ -5,4 +5,4 @@ CREATE TABLE `db_migration` (
   `tstamp` timestamp NULL DEFAULT current_timestamp(),
   PRIMARY KEY (`id`),
   UNIQUE KEY `id` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
