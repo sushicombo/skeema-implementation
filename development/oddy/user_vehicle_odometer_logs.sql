@@ -10,4 +10,4 @@ CREATE TABLE `user_vehicle_odometer_logs` (
   KEY `fk_odometer_log_user_vehicle_id` (`user_vehicle_id`),
   CONSTRAINT `fk_odometer_log_unverified_service_book_id` FOREIGN KEY (`unverified_service_book_id`) REFERENCES `unverified_service_books` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `fk_odometer_log_user_vehicle_id` FOREIGN KEY (`user_vehicle_id`) REFERENCES `user_vehicles` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

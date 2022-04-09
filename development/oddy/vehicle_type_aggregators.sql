@@ -9,4 +9,4 @@ CREATE TABLE `vehicle_type_aggregators` (
   PRIMARY KEY (`id`),
   KEY `fk_vehicle_type_aggregators_vehicle_id` (`vehicle_id`),
   CONSTRAINT `fk_vehicle_type_aggregators_vehicle_id` FOREIGN KEY (`vehicle_id`) REFERENCES `vehicles` (`id`) ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

@@ -7,4 +7,4 @@ CREATE TABLE `mstdivisi` (
   `statusData` int(11) NOT NULL DEFAULT 0,
   PRIMARY KEY (`idDivisi`),
   UNIQUE KEY `chkMstDivisi` (`namaDivisi`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

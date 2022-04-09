@@ -12,4 +12,4 @@ CREATE TABLE `vehicles` (
   KEY `fk_vehicle_vehicle_type_id` (`vehicle_type_id`),
   CONSTRAINT `fk_vehicle_vehicle_subcategory_id` FOREIGN KEY (`vehicle_subcategory_id`) REFERENCES `vehicle_subcategories` (`id`) ON UPDATE CASCADE,
   CONSTRAINT `fk_vehicle_vehicle_type_id` FOREIGN KEY (`vehicle_type_id`) REFERENCES `vehicle_types` (`id`) ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

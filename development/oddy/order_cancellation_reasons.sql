@@ -10,4 +10,4 @@ CREATE TABLE `order_cancellation_reasons` (
   KEY `fk_cancellation_reasons_id` (`cancellation_reasons_id`),
   CONSTRAINT `fk_cancellation_reasons_id` FOREIGN KEY (`cancellation_reasons_id`) REFERENCES `cancellation_reasons` (`id`) ON UPDATE CASCADE,
   CONSTRAINT `fk_order_id` FOREIGN KEY (`order_id`) REFERENCES `orders` (`id`) ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

@@ -13,4 +13,4 @@ CREATE TABLE `user_devices` (
   PRIMARY KEY (`id`),
   KEY `fk_user_devices_user_id` (`user_id`),
   CONSTRAINT `fk_user_devices_user_id` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

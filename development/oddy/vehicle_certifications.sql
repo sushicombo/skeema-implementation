@@ -12,4 +12,4 @@ CREATE TABLE `vehicle_certifications` (
   PRIMARY KEY (`id`),
   KEY `fk_order_vehicle_certification_id` (`order_id`),
   CONSTRAINT `fk_order_vehicle_certification_id` FOREIGN KEY (`order_id`) REFERENCES `orders` (`id`) ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

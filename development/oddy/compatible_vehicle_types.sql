@@ -5,4 +5,4 @@ CREATE TABLE `compatible_vehicle_types` (
   KEY `compatible_vehicle_types_vehicle_type_id` (`vehicle_type_id`),
   CONSTRAINT `compatible_vehicle_types_product_id` FOREIGN KEY (`product_id`) REFERENCES `products` (`id`) ON DELETE CASCADE,
   CONSTRAINT `compatible_vehicle_types_vehicle_type_id` FOREIGN KEY (`vehicle_type_id`) REFERENCES `vehicle_types` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

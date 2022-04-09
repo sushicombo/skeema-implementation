@@ -12,4 +12,4 @@ CREATE TABLE `partners` (
   PRIMARY KEY (`id`),
   KEY `fk_partners_postal_code_id` (`postal_code_id`),
   CONSTRAINT `fk_partners_postal_code_id` FOREIGN KEY (`postal_code_id`) REFERENCES `postal_codes` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

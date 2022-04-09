@@ -16,4 +16,4 @@ CREATE TABLE `order_package_checklists` (
   CONSTRAINT `order_package_checklist_package_id` FOREIGN KEY (`package_id`) REFERENCES `packages` (`id`) ON DELETE CASCADE,
   CONSTRAINT `order_package_checklist_vehicle_checklist_condition_id` FOREIGN KEY (`vehicle_checklist_condition_id`) REFERENCES `vehicle_checklist_conditions` (`id`) ON DELETE CASCADE,
   CONSTRAINT `order_package_checklist_vehicle_checklist_id` FOREIGN KEY (`vehicle_checklist_id`) REFERENCES `vehicle_checklists` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

@@ -13,4 +13,4 @@ CREATE TABLE `order_package_services` (
   KEY `fk_order_package_services_service_id` (`service_id`),
   CONSTRAINT `fk_order_package_services_order_package_id` FOREIGN KEY (`order_package_id`) REFERENCES `order_packages` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `fk_order_package_services_service_id` FOREIGN KEY (`service_id`) REFERENCES `services` (`id`) ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

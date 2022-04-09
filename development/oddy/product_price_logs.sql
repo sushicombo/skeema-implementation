@@ -19,4 +19,4 @@ CREATE TABLE `product_price_logs` (
   CONSTRAINT `fk_product_price_logs_product_id` FOREIGN KEY (`product_id`) REFERENCES `products` (`id`) ON UPDATE CASCADE,
   CONSTRAINT `fk_product_price_logs_user_id` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON UPDATE CASCADE,
   CONSTRAINT `fk_product_price_logs_workshop_id` FOREIGN KEY (`workshop_id`) REFERENCES `workshops` (`id`) ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

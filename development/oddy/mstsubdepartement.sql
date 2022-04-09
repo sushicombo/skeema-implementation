@@ -10,4 +10,4 @@ CREATE TABLE `mstsubdepartement` (
   PRIMARY KEY (`idDivisi`,`idDepartement`,`idSubDepartement`),
   UNIQUE KEY `chkMstSubDepartement` (`idDivisi`,`idDepartement`,`namaSubDepartement`),
   CONSTRAINT `fkMstSubDepartementDepartement` FOREIGN KEY (`idDivisi`, `idDepartement`) REFERENCES `mstdepartement` (`idDivisi`, `idDepartement`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

@@ -5,4 +5,4 @@ CREATE TABLE `compatible_product_categories` (
   KEY `compatible_product_categories_subcategory_id` (`product_category_id`),
   CONSTRAINT `compatible_product_categories_category_id` FOREIGN KEY (`product_category_id`) REFERENCES `product_categories` (`id`),
   CONSTRAINT `compatible_product_categories_service_id` FOREIGN KEY (`service_id`) REFERENCES `services` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

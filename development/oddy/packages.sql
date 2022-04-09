@@ -11,4 +11,4 @@ CREATE TABLE `packages` (
   PRIMARY KEY (`id`),
   KEY `fk_packages_vehicle_category_id` (`vehicle_category_id`),
   CONSTRAINT `fk_packages_vehicle_category_id` FOREIGN KEY (`vehicle_category_id`) REFERENCES `vehicle_categories` (`id`) ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

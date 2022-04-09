@@ -9,4 +9,4 @@ CREATE TABLE `order_ratings` (
   PRIMARY KEY (`id`),
   KEY `fk_order_ratings_order_id` (`order_id`),
   CONSTRAINT `fk_order_ratings_order_id` FOREIGN KEY (`order_id`) REFERENCES `orders` (`id`) ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

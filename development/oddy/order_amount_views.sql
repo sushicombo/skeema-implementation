@@ -3,4 +3,4 @@ CREATE TABLE `order_amount_views` (
   `amount` float DEFAULT NULL,
   KEY `fk_order_amount_views_orders` (`order_id`),
   CONSTRAINT `fk_order_amount_views_orders` FOREIGN KEY (`order_id`) REFERENCES `orders` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

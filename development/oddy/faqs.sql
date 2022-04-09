@@ -9,4 +9,4 @@ CREATE TABLE `faqs` (
   PRIMARY KEY (`id`),
   KEY `faq_faq_topic_id` (`faq_topic_id`),
   CONSTRAINT `faq_faq_topic_id` FOREIGN KEY (`faq_topic_id`) REFERENCES `faq_topics` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

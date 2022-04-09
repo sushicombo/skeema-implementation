@@ -22,4 +22,4 @@ CREATE TABLE `products` (
   KEY `fk_products_brand_id` (`brand_id`),
   KEY `fk_products_product_category_id` (`product_category_id`),
   CONSTRAINT `fk_products_brand_id` FOREIGN KEY (`brand_id`) REFERENCES `product_brands` (`id`) ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

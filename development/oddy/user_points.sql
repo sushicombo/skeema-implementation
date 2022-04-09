@@ -3,4 +3,4 @@ CREATE TABLE `user_points` (
   `total_point` int(10) DEFAULT 0,
   KEY `fk_user_points_user_id` (`user_id`),
   CONSTRAINT `fk_user_points_user_id` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

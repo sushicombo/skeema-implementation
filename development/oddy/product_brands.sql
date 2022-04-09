@@ -8,4 +8,4 @@ CREATE TABLE `product_brands` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `name_unique` (`name`),
   UNIQUE KEY `pb_product_brand_id_unique` (`pb_product_brand_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

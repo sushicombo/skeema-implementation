@@ -10,4 +10,4 @@ CREATE TABLE `coupon_codes` (
   UNIQUE KEY `id_2` (`id`),
   KEY `coupon_code_coupon_id` (`coupon_id`),
   CONSTRAINT `coupon_code_coupon_id` FOREIGN KEY (`coupon_id`) REFERENCES `coupons` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

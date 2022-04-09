@@ -7,4 +7,4 @@ CREATE TABLE `workshop_schedules` (
   PRIMARY KEY (`id`),
   KEY `fk_workshop_schedules_workshop_id` (`workshop_id`),
   CONSTRAINT `fk_workshop_schedules_workshop_id` FOREIGN KEY (`workshop_id`) REFERENCES `workshops` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

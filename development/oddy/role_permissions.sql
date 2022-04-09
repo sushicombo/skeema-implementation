@@ -6,4 +6,4 @@ CREATE TABLE `role_permissions` (
   KEY `role_permissions_module_id` (`module_id`),
   CONSTRAINT `role_permissions_module_id` FOREIGN KEY (`module_id`) REFERENCES `permissions` (`id`) ON DELETE CASCADE,
   CONSTRAINT `role_permissions_role_id` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

@@ -7,4 +7,4 @@ CREATE TABLE `postal_codes` (
   PRIMARY KEY (`id`),
   KEY `postal_codes_district_id` (`district_id`),
   CONSTRAINT `postal_codes_district_id` FOREIGN KEY (`district_id`) REFERENCES `districts` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

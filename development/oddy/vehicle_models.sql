@@ -8,4 +8,4 @@ CREATE TABLE `vehicle_models` (
   UNIQUE KEY `name_unique` (`name`),
   KEY `fk_vehicle_models_vehicle_brand_id` (`vehicle_brand_id`),
   CONSTRAINT `fk_vehicle_models_vehicle_brand_id` FOREIGN KEY (`vehicle_brand_id`) REFERENCES `vehicle_brands` (`id`) ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

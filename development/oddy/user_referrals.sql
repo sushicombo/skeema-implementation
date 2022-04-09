@@ -14,4 +14,4 @@ CREATE TABLE `user_referrals` (
   KEY `user_referral_referrer_user_id` (`referrer_user_id`),
   CONSTRAINT `user_referral_coupon_code` FOREIGN KEY (`coupon_code`) REFERENCES `coupon_codes` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `user_referral_user_id` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

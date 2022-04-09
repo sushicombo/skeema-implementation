@@ -27,4 +27,4 @@ CREATE TABLE `workshops` (
   CONSTRAINT `fk_workshops_branch_id` FOREIGN KEY (`branch_id`) REFERENCES `branches` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `fk_workshops_partner_id` FOREIGN KEY (`partner_id`) REFERENCES `partners` (`id`) ON UPDATE CASCADE,
   CONSTRAINT `fk_workshops_postal_code_id` FOREIGN KEY (`postal_code_id`) REFERENCES `postal_codes` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

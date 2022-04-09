@@ -13,4 +13,4 @@ CREATE TABLE `reminders` (
   KEY `fk_reminders_service_id` (`service_id`),
   CONSTRAINT `fk_reminders_service_id` FOREIGN KEY (`service_id`) REFERENCES `services` (`id`) ON UPDATE CASCADE,
   CONSTRAINT `fk_reminders_user_vehicle_id` FOREIGN KEY (`user_vehicle_id`) REFERENCES `user_vehicles` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

@@ -15,4 +15,4 @@ CREATE TABLE `package_menus` (
   UNIQUE KEY `order_2` (`order`),
   KEY `fk_package_menus_vehicle_category_id` (`vehicle_category_id`),
   CONSTRAINT `fk_package_menus_vehicle_category_id` FOREIGN KEY (`vehicle_category_id`) REFERENCES `vehicle_categories` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

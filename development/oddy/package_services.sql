@@ -6,4 +6,4 @@ CREATE TABLE `package_services` (
   KEY `package_services_package_id` (`package_id`),
   CONSTRAINT `package_services_package_id` FOREIGN KEY (`package_id`) REFERENCES `packages` (`id`) ON DELETE CASCADE,
   CONSTRAINT `package_services_service_id` FOREIGN KEY (`service_id`) REFERENCES `services` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

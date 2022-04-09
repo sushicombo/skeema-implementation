@@ -9,4 +9,4 @@ CREATE TABLE `leaderboard_ranks` (
   KEY `fk_leaderboard_ranks_user_id` (`user_id`),
   CONSTRAINT `fk_leaderboard_ranks_leaderboard_id` FOREIGN KEY (`leaderboard_id`) REFERENCES `leaderboards` (`id`) ON UPDATE CASCADE,
   CONSTRAINT `fk_leaderboard_ranks_user_id` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

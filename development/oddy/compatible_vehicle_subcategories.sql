@@ -5,4 +5,4 @@ CREATE TABLE `compatible_vehicle_subcategories` (
   KEY `compatible_vehicle_subcategories_subcategory_id` (`vehicle_subcategory_id`),
   CONSTRAINT `compatible_vehicle_subcategories_service_id` FOREIGN KEY (`service_id`) REFERENCES `services` (`id`) ON DELETE CASCADE,
   CONSTRAINT `compatible_vehicle_subcategories_subcategory_id` FOREIGN KEY (`vehicle_subcategory_id`) REFERENCES `vehicle_subcategories` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

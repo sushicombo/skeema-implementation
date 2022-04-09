@@ -14,4 +14,4 @@ CREATE TABLE `unverified_service_books` (
   PRIMARY KEY (`id`),
   KEY `fk_unverified_service_books_user_vehicle_id` (`user_vehicle_id`),
   CONSTRAINT `fk_unverified_service_books_user_vehicle_id` FOREIGN KEY (`user_vehicle_id`) REFERENCES `user_vehicles` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

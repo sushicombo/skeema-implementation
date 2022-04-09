@@ -27,4 +27,4 @@ CREATE TABLE `MstToko` (
   `KodePriceIndex` int(11) DEFAULT NULL,
   `idLkj` int(11) DEFAULT NULL,
   PRIMARY KEY (`kodeToko`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4mb4;

@@ -7,4 +7,4 @@ CREATE TABLE `coupon_users` (
   KEY `coupon_user_coupon_code_id` (`coupon_code_id`),
   CONSTRAINT `coupon_user_coupon_code_id` FOREIGN KEY (`coupon_code_id`) REFERENCES `coupon_codes` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `coupon_user_user_id` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

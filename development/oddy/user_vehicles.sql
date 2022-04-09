@@ -15,4 +15,4 @@ CREATE TABLE `user_vehicles` (
   KEY `fk_user_vehicle_vehicle_id` (`vehicle_id`),
   CONSTRAINT `fk_user_vehicle_user_id` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `fk_user_vehicle_vehicle_id` FOREIGN KEY (`vehicle_id`) REFERENCES `vehicles` (`id`) ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

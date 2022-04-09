@@ -6,4 +6,4 @@ CREATE TABLE `planet_ban_product_brands` (
   `updated_at` datetime DEFAULT NULL,
   `status` tinyint(1) NOT NULL DEFAULT 1,
   UNIQUE KEY `chkMstBrand` (`namaBrand`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

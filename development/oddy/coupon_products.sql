@@ -5,4 +5,4 @@ CREATE TABLE `coupon_products` (
   KEY `coupon_product_vehicle_product_id` (`product_id`),
   CONSTRAINT `coupon_product_coupon_id` FOREIGN KEY (`coupon_id`) REFERENCES `coupons` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `coupon_product_vehicle_product_id` FOREIGN KEY (`product_id`) REFERENCES `products` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

@@ -11,4 +11,4 @@ CREATE TABLE `landing_pages` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `title_unique` (`title`),
   UNIQUE KEY `slug` (`slug`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

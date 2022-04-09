@@ -4,4 +4,4 @@ CREATE TABLE `order_payment_method_logs` (
   `log_datetime` datetime DEFAULT NULL,
   KEY `fk_order_payment_method_log_order_id` (`order_id`),
   CONSTRAINT `fk_order_payment_method_log_order_id` FOREIGN KEY (`order_id`) REFERENCES `orders` (`id`) ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

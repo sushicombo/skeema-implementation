@@ -8,4 +8,4 @@ CREATE TABLE `unverified_service_book_services` (
   KEY `unverified_service_book_services_unverified_service_book_id` (`unverified_service_book_id`),
   CONSTRAINT `unverified_service_book_services_service_id` FOREIGN KEY (`service_id`) REFERENCES `services` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `unverified_service_book_services_unverified_service_book_id` FOREIGN KEY (`unverified_service_book_id`) REFERENCES `unverified_service_books` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

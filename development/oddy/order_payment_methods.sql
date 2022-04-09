@@ -5,4 +5,4 @@ CREATE TABLE `order_payment_methods` (
   `amount` decimal(15,2) DEFAULT NULL,
   KEY `fk_order_payment_method_order_id` (`order_id`),
   CONSTRAINT `fk_order_payment_method_order_id` FOREIGN KEY (`order_id`) REFERENCES `orders` (`id`) ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

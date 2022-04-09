@@ -61,4 +61,4 @@ CREATE TABLE `orders` (
   CONSTRAINT `fk_orders_user_vehicle_id` FOREIGN KEY (`user_vehicle_id`) REFERENCES `user_vehicles` (`id`) ON UPDATE CASCADE,
   CONSTRAINT `fk_orders_workshop_id` FOREIGN KEY (`workshop_id`) REFERENCES `workshops` (`id`) ON UPDATE CASCADE,
   CONSTRAINT `fk_vehicle_id` FOREIGN KEY (`vehicle_id`) REFERENCES `vehicles` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

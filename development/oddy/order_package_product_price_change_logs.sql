@@ -14,4 +14,4 @@ CREATE TABLE `order_package_product_price_change_logs` (
   CONSTRAINT `fk_price_change_log_order_id` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `fk_price_change_log_order_package_product_id` FOREIGN KEY (`order_package_product_id`) REFERENCES `order_package_products` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `fk_price_change_log_user_id` FOREIGN KEY (`order_id`) REFERENCES `orders` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

@@ -8,4 +8,4 @@ CREATE TABLE `order_status_logs` (
   PRIMARY KEY (`id`),
   KEY `fk_order_status_id` (`order_status_id`),
   CONSTRAINT `fk_order_status_id` FOREIGN KEY (`order_status_id`) REFERENCES `order_statuses` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

@@ -7,4 +7,4 @@ CREATE TABLE `cities` (
   PRIMARY KEY (`id`),
   KEY `cities_province_id` (`province_id`),
   CONSTRAINT `cities_province_id` FOREIGN KEY (`province_id`) REFERENCES `provinces` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

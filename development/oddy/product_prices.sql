@@ -13,4 +13,4 @@ CREATE TABLE `product_prices` (
   KEY `fk_product_prices_workshop_id` (`workshop_id`),
   CONSTRAINT `fk_product_prices_product_id` FOREIGN KEY (`product_id`) REFERENCES `products` (`id`) ON UPDATE CASCADE,
   CONSTRAINT `fk_product_prices_workshop_id` FOREIGN KEY (`workshop_id`) REFERENCES `workshops` (`id`) ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

@@ -8,4 +8,4 @@ CREATE TABLE `pb_referral_coupon_codes` (
   UNIQUE KEY `code` (`code`),
   UNIQUE KEY `code_2` (`code`),
   UNIQUE KEY `code_3` (`code`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

@@ -12,4 +12,4 @@ CREATE TABLE `product_categories` (
   PRIMARY KEY (`id`),
   KEY `product_categories_parent_category_id` (`parent_category_id`),
   CONSTRAINT `product_categories_parent_category_id` FOREIGN KEY (`parent_category_id`) REFERENCES `product_categories` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
